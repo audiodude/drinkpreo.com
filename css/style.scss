@@ -1,0 +1,157 @@
+---
+---
+
+$dark-grey: #333;
+$lady-bg-color: #7b775e;
+$light-grey: #ccc;
+$white: #fff;
+
+html,
+body {
+  height: 100%;  
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+#bg-cont {
+  background-image: url(/img/RunningLady.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#bg-cont.lady-running {
+  background-color: $lady-bg-color;
+}
+
+#social-media {
+  font-size: 48px;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+   color: $white; 
+  }
+}
+
+#main-cont {
+  color: $white;
+  text-align: center;
+
+  hr {
+    background-color: $white;
+    border: none;
+    color: $white;
+    height: 2px;
+    margin-bottom: 50px;
+    width: 350px;
+  }
+}
+
+.tag-font {
+  font-family: "museo-sans", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.pitch-font {
+  font-family: "lexia-light", serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+#title {
+  font-size: 100px;
+  font-family: sans-serif;
+  margin-bottom: 40px;
+}
+
+.tagline {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.tagline-top {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#pitch {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+#partnership {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 85px;
+  margin-top: 120px;
+}
+
+.isothrive-logo {
+  display: inline-block;
+  margin: -45px 0 0 10px;
+  vertical-align: middle;
+}
+
+input[type=email] {
+  border: none;
+  color: $dark-grey;
+  font-size: 30px;
+  padding: 12px;
+  -webkit-appearance: none;
+}
+
+input[type=email]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $light-grey;
+}
+input[type=email]::-moz-placeholder { /* Firefox 18- */
+  color: $light-grey;
+}
+input[type=email]:-ms-input-placeholder { /* IE 10+ */
+  color: $light-grey;
+}
+
+#email-form {
+  input {
+    margin-top: 50px;
+  }
+
+  %form-text {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  #thankyou {
+    @extend %form-text;
+    line-height: 56px;
+  }
+
+  button {
+    @extend %form-text;
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    padding: 12px;
+    text-transform: uppercase;
+  }
+}
+
+#legal {
+  font-size: 14px;
+}

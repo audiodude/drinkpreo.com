@@ -1,0 +1,2 @@
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', '.netlify']
+destination: _site
